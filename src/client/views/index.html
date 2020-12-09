@@ -20,7 +20,7 @@
         <main>
             <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="" placeholder="URL here">
+                    <input id="name" type="text" name="input" value="" placeholder="URL here">
                     <input type="submit" name="" value="Analysis" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             <section>
@@ -45,7 +45,7 @@
             if ('serviceWorker' in navigator) {
                 // Use the window load event to keep the page load performant
                 window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('/service-worker.js');
+                    navigator.serviceWorker.register('service-worker.js');
                 });
             }
            </script>
